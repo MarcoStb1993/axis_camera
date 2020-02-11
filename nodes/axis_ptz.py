@@ -89,7 +89,7 @@ class AxisPTZ:
         self.command_subscriber = rospy.Subscriber("cmd", Axis, self.cmd, queue_size=100)  # deprecated
         self.mirror_subscriber = rospy.Subscriber("mirror", Bool, self.mirrorCallback, queue_size=100)  # deprecated
 
-        self.srv = Server(PTZConfig, self.callback)  # deprecated
+        #self.srv = Server(PTZConfig, self.callback)  # deprecated
 
         # Needs to be after the backwards compatibility setup
         # start the publisher thread

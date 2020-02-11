@@ -4,3 +4,7 @@
 TAGS
 axis_214_PTZ_standalone.urdf
 doc/html
+
+.cproject
+.settings
+.project
